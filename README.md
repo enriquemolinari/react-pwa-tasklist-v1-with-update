@@ -1,8 +1,8 @@
 # Progressive Web App (React): Task List
 
-![pwa-task-screenshot](https://user-images.githubusercontent.com/11150895/149962394-3423124c-8d6c-4326-8164-b861c0d4f39b.png)
+![task-list-v1-update](https://user-images.githubusercontent.com/11150895/157128754-5ec44361-eb5b-4ef8-9c9f-4745bd6dc9f3.png)
 
-Task List is a **Progressive Web App** built with React as part of my book [Implementing PWA with React](https://leanpub.com/understandingreact) (not yet published). This is **version 1** of the application. It is an installable app, with the app shell cached (using cache first strategy), but requires the network to create tasks.
+Task List is a **Progressive Web App** built with React as part of my book [Implementing PWA with React](https://leanpub.com/understandingreact) (not yet published). This is **version 1** of the application and **support** an update mechanism. It is an installable app, with the app shell cached (using cache first strategy), but requires the network to create tasks.
 
 It requires to have it running two services I have wrote: [UserAuth](https://github.com/enriquemolinari/userauth) and [TaskList](https://github.com/enriquemolinari/tasklist). Both services are pretty easy to start, with minimal dependencies.
 
