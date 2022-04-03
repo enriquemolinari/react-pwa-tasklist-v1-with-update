@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
@@ -14,8 +14,8 @@ const Msg = (props) => (
     <Button size="sm" onClick={() => onAlertToastClick(props.reg)}>
       here
     </Button>{" "}
-    to update it now. Or, close this message and the application will be updated
-    the next time you open it.
+    to update it now... Or, close this message and the application will be
+    updated the next time you open it.
   </div>
 );
 
@@ -34,13 +34,15 @@ navigator.serviceWorker.addEventListener("controllerchange", () => {
   window.location.reload();
 });
 
-ReactDOM.render(
+const container = document.getElementById("root");
+const root = createRoot(container);
+
+root.render(
   <React.StrictMode>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </React.StrictMode>,
-  document.getElementById("root")
+  </React.StrictMode>
 );
 
 // If you want your app to work offline and load faster, you can change
