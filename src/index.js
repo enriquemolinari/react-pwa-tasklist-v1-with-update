@@ -14,8 +14,8 @@ const Msg = (props) => (
     <Button size="sm" onClick={() => onAlertToastClick(props.reg)}>
       here
     </Button>{" "}
-    to update it now... Or, close this message and the application will be
-    updated the next time you open it.
+    to update it now. Or, close this message and the application will be updated
+    the next time you open it.
   </div>
 );
 
